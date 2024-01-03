@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Final Project</title>
+    <link rel="stylesheet" type="text/css" href="Final Project.css">
+    <script src="Final Project.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="title">
+		<h1>Anomaly Detection</h1>
+		<h3>Identifying abnormal behaviors</h3>
+		<h5>Group9   許庭愷/李岳融/謝佳妤/陳厚宇/蔡清宇</h5>
+	</div>
+    <nav>
+        <ul>
+            <li><button id="firstPart">Introduction</button></li>
+            <li><button id="secondPart">Algorithm</button></li>
+            <li><button id="thirdPart">Application</button></li>
+            <li><button id="fourthPart">Pros and Cons</button></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="introduction">
+            <div class="container">
+                <div class="left-text">
+                    <p>
+                        <h2>Purpose:</h2>
+                        <ul>
+                            <li>Identify abnormal behavior or data</li>
+                            <li>Recognize anomalies from normal behavior patterns</li>
+                            <li>Enabling early issue detection and performance improvement</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="right-text">
+                    <p>
+                        <h2>Origin and Evolution:</h2>
+                        <ul>
+                            <li>Early 20th century: quality control for manufacturing.</li>
+                            <li>Early Methods: Relied on statistical and rule-based approaches.</li>
+                            <li>Technological Advances: Principal Component Analysis (PCA) and Multivariate Control Charts (MCC).</li>
+                            <li>Broadening application areas: finance, network security, healthcare, etc.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="algorithm">
+            <div class="container">
+                <div class="left-text">
+                    <p>
+                        <h2>Statistics</h2>
+                        <ul>
+                            <li>Z score</li>
+                            <li>Standard Deviation
+                                <br> This method measures how far a data point is from the mean in terms of standard deviations.
+                            </li>
+                            <li>InterQuartile Range
+                                <br>Anomalies are detected by identifying data points outside the calculated IQR.
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="images">
+                    <img src="picture1.jpg" width="250px" class="float-left">
+                </div>
+                <div class="right-text">
+                    <p>
+                        <h2>Machine Learning</h2>
+                        <ul>
+                            <li>Decision Tree: Random Forest
+                                <br> Uses an ensemble of decision trees to identify anomalies in the data.
+                            </li>
+                            <li>Supervised: Isolation Forest
+                                <br>This algorithm builds an ensemble of isolation trees to isolate anomalies efficiently.
+                            </li>
+                            <li>Deep Learning: Neural Network</li>
+                        </ul>
+                    </p>
+                </div>
+                 <div class="images">
+                    <img src="picture2.png" width="250px" class="float-left">
+                </div>
+            </div>
+        </section>
+        <section id="application">
+           <ul>
+               <li>
+                    <b>Identify credit card fraud</b>
+                    <br>
+                    Abnormal detection can be applied to identify credit card fraud, helping financial institutions 
+                    recognize irregular credit card transactions to safeguard customers' financial security. 
+                    Supervised learning can be utilized to learn patterns of fraud and normal transactions from vast 
+                    amounts of transaction data. Models can be trained based on known fraud cases. 
+                    <p>Alternatively, unsupervised learning methods can be employed to automatically discover abnormal patterns. Additionally, statistical methods such as mean, 
+                    standard deviation, percentiles, ..., can be used to analyze users' historical transaction data. Transactions deviating significantly 
+                    from the normal pattern can be flagged as abnormal. By leveraging these methods, financial institutions can build robust abnormal detection systems, 
+                    enhancing the ability to detect credit card fraud while minimizing false positives and ensuring legitimate transactions are unaffected.</p>
+                </li>
+               <li>
+                    <b>Industrial production</b>
+                    <br>
+                    Abnormal detection in the industrial production domain relies on advanced algorithms that leverage real-time data monitoring and analysis. 
+                    These algorithms typically employ unsupervised learning, eliminating the need for specific defect data, 
+                    and instead undergo pre-training using normal operational data. 
+                    <p> By comparing real-time production data, the algorithms can identify abnormal patterns or values, indicating potential issues. This technology contributes 
+                    to improving production line efficiency, optimizing quality, and simultaneously reducing failure rates. </p>
+                    <p>Furthermore, it facilitates the implementation of predictive maintenance, allowing businesses to proactively prevent machine failures and minimize downtime. In summary, abnormal detection provides powerful tools for industrial production, 
+                    enabling the realization of a more reliable, efficient, and sustainable manufacturing environment.</p>
+                </li>
+               <li>
+                    <b>Assistance in account security</b>
+                    <br>
+                    The application of anomaly detection in account security can provide significant assistance in reducing some cybersecurity risks. 
+                    By collecting user behaviors and authentication activities, such as login times, IP addresses, used devices, and performed operations, 
+                    it is possible to establish a model of normal user behavior. 
+                    <p>Subsequently, this model can be applied to real-time data to detect abnormal behaviors.
+                    The use of anomaly detection can help prevent abnormal activities, such as hacking attempts, by detecting issues before they cause actual harm, 
+                    thereby proactively identifying potential security risks. The model can also be updated based on new data and behavior patterns to adapt to changes in system and user behavior.</p>
+                </li>
+           </ul>
+        </section>
+        <section id="pros-and-cons">
+            <div class="container">
+                <div class="left-text">
+                    <p>
+                        <h2>Pros:</h2>
+                        <ul>
+                            <li> 
+                                <b>Early detection</b>
+                                <br>Anomaly detection is effective in identifying unusual patterns or behaviors in data, 
+                                allowing for early detection of potential issues or threats.
+                            </li>
+                            <li>
+                                <b>Automation</b>
+                                <br>Many anomaly detection algorithms can operate in real-time or near real-time, 
+                                allowing for automated and timely responses to anomalies.
+                            </li>
+                            <li>
+                                <b>Adaptability</b>
+                                <br>Anomaly detection methods can adapt to changes in the data distribution over time, 
+                                making them suitable for dynamic environments.
+                            </li>
+                        </ul>
+                    </p>
+                    <br>
+                    <p>
+                        <h2>Future:</h2>
+                        <br>With the continuous advancement of artificial intelligence deep learning technology, there may be more complex and refined deep learning models in the future, 
+                        which can enhance the accuracy and efficiency of anomaly detection. 
+                        <p>Anomaly detection systems may also become more autonomous, capable of automatically learning and adapting to new anomaly patterns, reducing the need for human intervention. 
+                            As contemporary society demands increasing real-time capabilities, future anomaly detection systems may place greater emphasis on 
+                            real-time performance to promptly respond and detect anomalies.</p>
+                    </p>
+                </div>
+                <div class="right-text">
+                    <p>
+                        <h2>Cons:</h2>
+                        <ul>
+                            <li> 
+                                <b>Difficulty in Defining Normal Behavior</b>
+                                <br>Determining what constitutes normal behavior can be subjective and challenging, 
+                                especially in complex systems where normal patterns may evolve over time.
+                            </li>
+                            <li>
+                                <b>Dependency on Data Quality</b>
+                                <br>Anomaly detection relies heavily on the quality of input data. 
+                                Noisy or incomplete data can lead to inaccurate results.
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
